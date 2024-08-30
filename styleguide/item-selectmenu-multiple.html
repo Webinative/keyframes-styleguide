@@ -1,623 +1,512 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
+
   <meta charset="utf-8">
-  <title>UI Library</title>
+  <title> UI Library</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width">
 
-  <link rel="icon" href="kss-assets/kss-favicon.svg">
-  <link rel="stylesheet" href="kss-assets/kss-theme.css">
-  <link rel="stylesheet" href="kss-assets/kss.min.css">
-  <link rel="stylesheet" href="kss-assets/prism.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vex-js/3.0.0/css/vex.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vex-js/3.0.0/css/vex-theme-plain.min.css">
+  <link rel="stylesheet" href="kss-assets/kss.css">
+
   <link rel="stylesheet" href="../static/css/dist/kss_overrides.css"/>
 <link rel="stylesheet" href="../static/css/dist/main.css"/>
 
+
+  <!-- script inclusion configurable through kss-config.json -->
+  
+  <!-- style inclusion configurable through kss-config.json -->
+  
 </head>
-<body class="kss-scheibo__body" id="kss-node" class="kss-fullscreen-mode">
 
-<header class="kss-header">
-  <h1 class="kss-doc-title">UI Library</h1>
-</header>
-<div class="kss-container">
-  <div class="kss-sidebar kss-style">
-    <div class="kss-search">
-      <input type="text" class="kss-search__input" id="kss-search__input" placeholder="Search">
-      <ul class="kss-search__list kss-nav__menu" id="kss-search__list">
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-base.html">
-              <span class="kss-nav__ref">1</span><span class="kss-nav__name">Base</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-blockquote" data-singlesectiontrigger="kssref-base-blockquote">
-                        <span class="kss-nav__ref">1.1</span><span class="kss-nav__name">Blockquote</span>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-bodytext" data-singlesectiontrigger="kssref-base-bodytext">
-                        <span class="kss-nav__ref">1.2</span><span class="kss-nav__name">Body text</span>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-headings" data-singlesectiontrigger="kssref-base-headings">
-                        <span class="kss-nav__ref">1.3</span><span class="kss-nav__name">Headings</span>
-                            <div class="kss-search__desc">
-                                <p>Headings H1 to H6.</p>
+<body id="kss-node" class="kss-fullscreen-mode">
 
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-links" data-singlesectiontrigger="kssref-base-links">
-                        <span class="kss-nav__ref">1.4</span><span class="kss-nav__name">Links</span>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-orderedlist" data-singlesectiontrigger="kssref-base-orderedlist">
-                        <span class="kss-nav__ref">1.5</span><span class="kss-nav__name">Ordered list</span>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-unorderedlist" data-singlesectiontrigger="kssref-base-unorderedlist">
-                        <span class="kss-nav__ref">1.6</span><span class="kss-nav__name">Unordered list</span>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-buttons.html">
-              <span class="kss-nav__ref">2</span><span class="kss-nav__name">Buttons</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-buttons.html#kssref-buttons-colors" data-singlesectiontrigger="kssref-buttons-colors">
-                        <span class="kss-nav__ref">2.1</span><span class="kss-nav__name">Buttons (colors)</span>
-                            <div class="kss-search__desc">
-                                <p>Buttons with different colors.</p>
+<main role="main" class="kss-main">
 
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-buttons.html#kssref-buttons-uistates" data-singlesectiontrigger="kssref-buttons-uistates">
-                        <span class="kss-nav__ref">2.2</span><span class="kss-nav__name">Buttons (UI states)</span>
-                            <div class="kss-search__desc">
-                                <p>Buttons user-interaction states.</p>
+                            <section id="kssref-selectmenu-multiple" class="kss-section kss-section--depth-2 is-fullscreen">
+  <div class="kss-style">
 
-                            </div>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-checkbox.html">
-              <span class="kss-nav__ref">3</span><span class="kss-nav__name">Checkbox</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-checked" data-singlesectiontrigger="kssref-checkbox-checked">
-                        <span class="kss-nav__ref">3.1</span><span class="kss-nav__name">Checkbox (checked)</span>
-                            <div class="kss-search__desc">
-                                <p>Input checkbox checked state.</p>
+    <div class="title-block">
 
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-disabled" data-singlesectiontrigger="kssref-checkbox-disabled">
-                        <span class="kss-nav__ref">3.2</span><span class="kss-nav__name">Checkbox (disabled)</span>
-                            <div class="kss-search__desc">
-                                <p>Inputheckbox disabled state.</p>
+  <a class="kss-title__permalink" href="#kssref-selectmenu-multiple">
+    <span class="kss-title__ref">
+      9.1
+      <span class="kss-title__permalink-hash">
+        SelectMenu.Multiple
+      </span>
+    </span>
+  </a>
 
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-inline" data-singlesectiontrigger="kssref-checkbox-inline">
-                        <span class="kss-nav__ref">3.3</span><span class="kss-nav__name">Checkbox (inline)</span>
-                            <div class="kss-search__desc">
-                                <p>Input checkbox displayed inline.</p>
+    <h2 class="kss-title kss-title--level-2">
+    Select Menu (Multiple)
+  </h2>
 
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-uistates" data-singlesectiontrigger="kssref-checkbox-uistates">
-                        <span class="kss-nav__ref">3.4</span><span class="kss-nav__name">Checkbox (UI states)</span>
-                            <div class="kss-search__desc">
-                                <p>Input checkbox user-interaction state.</p>
-
-                            </div>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-dialog.html">
-              <span class="kss-nav__ref">4</span><span class="kss-nav__name">Dialog</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-dialog.html#kssref-dialog-alert" data-singlesectiontrigger="kssref-dialog-alert">
-                        <span class="kss-nav__ref">4.1</span><span class="kss-nav__name">Alert Dialog</span>
-                            <div class="kss-search__desc">
-                                <p>Alert Dialog.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-dialog.html#kssref-dialog-confirm" data-singlesectiontrigger="kssref-dialog-confirm">
-                        <span class="kss-nav__ref">4.2</span><span class="kss-nav__name">Confirm Dialog</span>
-                            <div class="kss-search__desc">
-                                <p>confirm Dialog.</p>
-
-                            </div>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-messages.html">
-              <span class="kss-nav__ref">5</span><span class="kss-nav__name">Messages</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-messages.html#kssref-messages-dismissible" data-singlesectiontrigger="kssref-messages-dismissible">
-                        <span class="kss-nav__ref">5.1</span><span class="kss-nav__name">Dismissible messages</span>
-                            <div class="kss-search__desc">
-                                <p>Dismissible Messages.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-messages.html#kssref-messages-levels" data-singlesectiontrigger="kssref-messages-levels">
-                        <span class="kss-nav__ref">5.2</span><span class="kss-nav__name">Messages (levels)</span>
-                            <div class="kss-search__desc">
-                                <p>Messages with different levels.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-messages.html#kssref-messages-nondismissible" data-singlesectiontrigger="kssref-messages-nondismissible">
-                        <span class="kss-nav__ref">5.3</span><span class="kss-nav__name">Dismissible messages</span>
-                            <div class="kss-search__desc">
-                                <p>Dismissible Messages.</p>
-
-                            </div>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-pagination.html">
-              <span class="kss-nav__ref">6</span><span class="kss-nav__name">Pagination</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-pagination.html#kssref-pagination-current" data-singlesectiontrigger="kssref-pagination-current">
-                        <span class="kss-nav__ref">6.1</span><span class="kss-nav__name">Pagination</span>
-                            <div class="kss-search__desc">
-                                <p>Displays page numbers.</p>
-
-                            </div>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-radio.html">
-              <span class="kss-nav__ref">7</span><span class="kss-nav__name">Radio</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-radio.html#kssref-radio-checked" data-singlesectiontrigger="kssref-radio-checked">
-                        <span class="kss-nav__ref">7.1</span><span class="kss-nav__name">Radio (checked)</span>
-                            <div class="kss-search__desc">
-                                <p>Input radio checked state.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-radio.html#kssref-radio-disabled" data-singlesectiontrigger="kssref-radio-disabled">
-                        <span class="kss-nav__ref">7.2</span><span class="kss-nav__name">Radio (disabled)</span>
-                            <div class="kss-search__desc">
-                                <p>Input radio disabled state.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-radio.html#kssref-radio-inline" data-singlesectiontrigger="kssref-radio-inline">
-                        <span class="kss-nav__ref">7.3</span><span class="kss-nav__name">Radio (inline)</span>
-                            <div class="kss-search__desc">
-                                <p>Input radio displayed inline.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-radio.html#kssref-radio-uistates" data-singlesectiontrigger="kssref-radio-uistates">
-                        <span class="kss-nav__ref">7.4</span><span class="kss-nav__name">Radio (UI states)</span>
-                            <div class="kss-search__desc">
-                                <p>Input radio user-interaction state.</p>
-
-                            </div>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  " href="section-segmentedcontrol.html">
-              <span class="kss-nav__ref">8</span><span class="kss-nav__name">Segmented controls</span>
-                  <div class="kss-search__desc">
-                      <p>Tab-like controls for use with icons inspired by macOS.</p>
-
-                  </div>
-          </a>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-selectmenu.html">
-              <span class="kss-nav__ref">9</span><span class="kss-nav__name">SelectMenu</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-selectmenu.html#kssref-selectmenu-multiple" data-singlesectiontrigger="kssref-selectmenu-multiple">
-                        <span class="kss-nav__ref">9.1</span><span class="kss-nav__name">Select Menu (Multiple)</span>
-                            <div class="kss-search__desc">
-                                <p>Searchable select-menu with multi-select options.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-selectmenu.html#kssref-selectmenu-uistates" data-singlesectiontrigger="kssref-selectmenu-uistates">
-                        <span class="kss-nav__ref">9.2</span><span class="kss-nav__name">Select Menu</span>
-                            <div class="kss-search__desc">
-                                <p>Select-menu with searchable options.</p>
-
-                            </div>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-textarea.html">
-              <span class="kss-nav__ref">10</span><span class="kss-nav__name">Textarea</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-textarea.html#kssref-textarea-disabled" data-singlesectiontrigger="kssref-textarea-disabled">
-                        <span class="kss-nav__ref">10.1</span><span class="kss-nav__name">Textarea (disabled)</span>
-                            <div class="kss-search__desc">
-                                <p>Input textarea disabled state.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-textarea.html#kssref-textarea-uistates" data-singlesectiontrigger="kssref-textarea-uistates">
-                        <span class="kss-nav__ref">10.2</span><span class="kss-nav__name">Textarea (UI States)</span>
-                            <div class="kss-search__desc">
-                                <p>Input textarea user-interaction states.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-textarea.html#kssref-textarea-validationstates" data-singlesectiontrigger="kssref-textarea-validationstates">
-                        <span class="kss-nav__ref">10.3</span><span class="kss-nav__name">Textarea (Validation states)</span>
-                            <div class="kss-search__desc">
-                                <p>Input textarea loading and error states.</p>
-
-                            </div>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-        <li class="kss-search__item kss-nav__menu-item">
-          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-textbox.html">
-              <span class="kss-nav__ref">11</span><span class="kss-nav__name">Textbox</span>
-          </a>
-              <ul>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-textbox.html#kssref-textbox-disabled" data-singlesectiontrigger="kssref-textbox-disabled">
-                        <span class="kss-nav__ref">11.1</span><span class="kss-nav__name">Textbox (disabled)</span>
-                            <div class="kss-search__desc">
-                                <p>Input textbox disabled state.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-textbox.html#kssref-textbox-uistates" data-singlesectiontrigger="kssref-textbox-uistates">
-                        <span class="kss-nav__ref">11.2</span><span class="kss-nav__name">Textbox (UI States)</span>
-                            <div class="kss-search__desc">
-                                <p>Input textbox user-interaction states.</p>
-
-                            </div>
-                    </a>
-                  </li>
-                  <li class="kss-search__item kss-nav__menu-item ">
-                    <a class="kss-search__link kss-nav__menu-link" href="section-textbox.html#kssref-textbox-validationstates" data-singlesectiontrigger="kssref-textbox-validationstates">
-                        <span class="kss-nav__ref">11.3</span><span class="kss-nav__name">Textbox (Validation states)</span>
-                            <div class="kss-search__desc">
-                                <p>Input textbox loading and error states.</p>
-
-                            </div>
-                    </a>
-                  </li>
-              </ul>
-        </li>
-      </ul>
-    </div>
-    <nav class="kss-nav" aria-label="Style Guide">
-      <ul class="kss-nav__menu">
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link" href="./">
-            <span class="kss-nav__ref">0</span><span class="kss-nav__name">Overview</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-base.html">
-            <span class="kss-nav__ref">1</span><span class="kss-nav__name">Base</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-buttons.html">
-            <span class="kss-nav__ref">2</span><span class="kss-nav__name">Buttons</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-checkbox.html">
-            <span class="kss-nav__ref">3</span><span class="kss-nav__name">Checkbox</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-dialog.html">
-            <span class="kss-nav__ref">4</span><span class="kss-nav__name">Dialog</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-messages.html">
-            <span class="kss-nav__ref">5</span><span class="kss-nav__name">Messages</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-pagination.html">
-            <span class="kss-nav__ref">6</span><span class="kss-nav__name">Pagination</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-radio.html">
-            <span class="kss-nav__ref">7</span><span class="kss-nav__name">Radio</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-segmentedcontrol.html">
-            <span class="kss-nav__ref">8</span><span class="kss-nav__name">Segmented controls</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-selectmenu.html">
-            <span class="kss-nav__ref">9</span><span class="kss-nav__name">SelectMenu</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-textarea.html">
-            <span class="kss-nav__ref">10</span><span class="kss-nav__name">Textarea</span>
-          </a>
-        </li>
-        <li class="kss-nav__menu-item">
-          <a class="kss-nav__menu-link " href="section-textbox.html">
-            <span class="kss-nav__ref">11</span><span class="kss-nav__name">Textbox</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <main class="kss-main" aria-label="Content">
-    <article>
-
-      <div id="kssref-selectmenu-multiple" class="kss-section kss-section--depth-2 is-fullscreen">
-        <div class="kss-style kss-style--header  ">
-          <a class="kss-title__permalink" href="#kssref-selectmenu-multiple">
-            <h2 class="kss-title kss-title--level-2 kss-style ">
-                Select Menu (Multiple)
-            </h2>
-          </a>
-            <p class="kss-toolbar">
-              <a class="kss-toolbar__link kss-toolbar__link--guides" title="Toggle example guides" href="#kssref-selectmenu-multiple" data-kss-guides="true">
-                <span class="kss-toolbar__tooltip">Toggle example guides</span>
-                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M5 35H10V44H5zM54 21H59V30H54zM54 35H59V44H54zM5 21H10V30H5zM5 0H10V15H5zM35 5H44V10H35zM20 5H29V10H20z"/><path class="kss-toolbar__icon-fill" d="M0 5H15V10H0zM54 0H59V15H54z"/><path class="kss-toolbar__icon-fill" d="M49 5H64V10H49zM54 49H59V64H54z"/><path class="kss-toolbar__icon-fill" d="M49 54H64V59H49zM5 49H10V64H5z"/><path class="kss-toolbar__icon-fill" d="M0 54H15V59H0zM35 54H44V59H35zM20 54H29V59H20z"/></svg>
-              </a>
-              <a class="kss-toolbar__link kss-toolbar__link--markup" title="Toggle HTML markup" href="#kssref-selectmenu-multiple" data-kss-markup="true">
-                <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
-                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M37.555 46.239l6.103 6.103 20.342-20.342-20.342-20.342-6.103 6.103 14.24 14.239-14.24 14.239zM26.445 17.761l-6.103-6.103-20.342 20.342 20.342 20.342 6.103-6.103-14.24-14.239 14.24-14.239z"/></svg>
-              </a>
-            </p>
-
-            <div class="kss-description">
-              <p>Searchable select-menu with multi-select options.</p>
-
-            </div>
-
-
-        </div>
-
-          <div class="kss-modifier__wrapper">
-            <div class="kss-modifier__defaultheader kss-style">
-              <div class="kss-modifier__defaultinsertmarkuptext">
-                &lt;insert-markup&gt;selectmenu.multiple-&lt;/insert-markup&gt;
-              </div>
-              <a title="open in a new window" class="" href="index-selectmenu-multiple_default.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
-            </div>
-
-            <div class="kss-modifier__example  ">
-                <div class="m-ip-select ">
-    <div class="m-ip-select__overlay"></div>
-    <label class="m-ip-select__label">Country</label>
-    <ul class="m-ip-select__tags-wrapper">
-        <li class="m-ip-select__tag">
-            India
-            <span class="m-ip-select__tag-x"></span>
-        </li>
-        <li class="m-ip-select__tag">
-            United Kingdom
-            <span class="m-ip-select__tag-x"></span>
-        </li>
-    </ul>
-    <div class="m-ip-select__input">
-        <span class="m-ip-select__display is-placeholder">Select</span>
-        <select class="m-ip-select__value" name="country" multiple hidden>
-            <option value="1">Afghanistan</option>
-            <option value="2">Albania</option>
-            <option value="3">Algeria</option>
-            <option value="4">India</option>
-            <option value="5">Indonesia</option>
-            <option value="6">United Kingdom</option>
-            <option value="7">United States of America</option>
-        </select>
-    </div>
-    <div class="m-ip-select__options-wrapper">
-        <ul class="m-ip-select__options m-ip-select__options--multiple">
-            <li data-value="afg" class="m-ip-select__opt-item">Afghanistan</li>
-            <li data-value="alb" class="m-ip-select__opt-item">Albania</li>
-            <li data-value="alg" class="m-ip-select__opt-item">Algeria</li>
-            <li data-value="in" class="m-ip-select__opt-item is-checked">India</li>
-            <li data-value="indo" class="m-ip-select__opt-item">Indonesia</li>
-            <li data-value="uk" class="m-ip-select__opt-item is-checked">United Kingdom</li>
-            <li data-value="usa" class="m-ip-select__opt-item">United States of America</li>
-        </ul>
-    </div>
 </div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-              <div class="kss-modifier__header">
-                <div>
-                  <div class="kss-modifier__name kss-style">
-                    .is-open
-                  </div>
-                  <div class="kss-modifier__description kss-style">
-                    Select menu options visible.
-                  </div>
-                  <div class="kss-modifier__insertmarkuptext kss-style">
-                    &lt;insert-markup&gt;selectmenu.multiple-0&lt;/insert-markup&gt;
-                  </div>
-                </div>
-                <a title="open in a new window" class="" href="index-selectmenu-multiple_0.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
-              </div>
-              <div class="kss-modifier__example ">
-                  <div class="m-ip-select is-open">
-    <div class="m-ip-select__overlay"></div>
-    <label class="m-ip-select__label">Country</label>
-    <ul class="m-ip-select__tags-wrapper">
-        <li class="m-ip-select__tag">
-            India
-            <span class="m-ip-select__tag-x"></span>
-        </li>
-        <li class="m-ip-select__tag">
-            United Kingdom
-            <span class="m-ip-select__tag-x"></span>
-        </li>
-    </ul>
-    <div class="m-ip-select__input">
-        <span class="m-ip-select__display is-placeholder">Select</span>
-        <select class="m-ip-select__value" name="country" multiple hidden>
-            <option value="1">Afghanistan</option>
-            <option value="2">Albania</option>
-            <option value="3">Algeria</option>
-            <option value="4">India</option>
-            <option value="5">Indonesia</option>
-            <option value="6">United Kingdom</option>
-            <option value="7">United States of America</option>
-        </select>
-    </div>
-    <div class="m-ip-select__options-wrapper">
-        <ul class="m-ip-select__options m-ip-select__options--multiple">
-            <li data-value="afg" class="m-ip-select__opt-item">Afghanistan</li>
-            <li data-value="alb" class="m-ip-select__opt-item">Albania</li>
-            <li data-value="alg" class="m-ip-select__opt-item">Algeria</li>
-            <li data-value="in" class="m-ip-select__opt-item is-checked">India</li>
-            <li data-value="indo" class="m-ip-select__opt-item">Indonesia</li>
-            <li data-value="uk" class="m-ip-select__opt-item is-checked">United Kingdom</li>
-            <li data-value="usa" class="m-ip-select__opt-item">United States of America</li>
-        </ul>
-    </div>
-</div>
-                <div class="kss-modifier__example-footer"></div>
-              </div>
-          </div>
 
-            <details class="kss-markup kss-style">
-              <summary>
-                  Markup
-              </summary>
-              <pre><code class="lang-markup">&lt;div class&#x3D;&quot;m-ip-select [modifier class]&quot;&gt;
-    &lt;div class&#x3D;&quot;m-ip-select__overlay&quot;&gt;&lt;/div&gt;
-    &lt;label class&#x3D;&quot;m-ip-select__label&quot;&gt;Country&lt;/label&gt;
-    &lt;ul class&#x3D;&quot;m-ip-select__tags-wrapper&quot;&gt;
-        &lt;li class&#x3D;&quot;m-ip-select__tag&quot;&gt;
-            India
-            &lt;span class&#x3D;&quot;m-ip-select__tag-x&quot;&gt;&lt;/span&gt;
-        &lt;/li&gt;
-        &lt;li class&#x3D;&quot;m-ip-select__tag&quot;&gt;
-            United Kingdom
-            &lt;span class&#x3D;&quot;m-ip-select__tag-x&quot;&gt;&lt;/span&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class&#x3D;&quot;m-ip-select__input&quot;&gt;
-        &lt;span class&#x3D;&quot;m-ip-select__display is-placeholder&quot;&gt;Select&lt;/span&gt;
-        &lt;select class&#x3D;&quot;m-ip-select__value&quot; name&#x3D;&quot;country&quot; multiple hidden&gt;
-            &lt;option value&#x3D;&quot;1&quot;&gt;Afghanistan&lt;/option&gt;
-            &lt;option value&#x3D;&quot;2&quot;&gt;Albania&lt;/option&gt;
-            &lt;option value&#x3D;&quot;3&quot;&gt;Algeria&lt;/option&gt;
-            &lt;option value&#x3D;&quot;4&quot;&gt;India&lt;/option&gt;
-            &lt;option value&#x3D;&quot;5&quot;&gt;Indonesia&lt;/option&gt;
-            &lt;option value&#x3D;&quot;6&quot;&gt;United Kingdom&lt;/option&gt;
-            &lt;option value&#x3D;&quot;7&quot;&gt;United States of America&lt;/option&gt;
-        &lt;/select&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;m-ip-select__options-wrapper&quot;&gt;
-        &lt;ul class&#x3D;&quot;m-ip-select__options m-ip-select__options--multiple&quot;&gt;
-            &lt;li data-value&#x3D;&quot;afg&quot; class&#x3D;&quot;m-ip-select__opt-item&quot;&gt;Afghanistan&lt;/li&gt;
-            &lt;li data-value&#x3D;&quot;alb&quot; class&#x3D;&quot;m-ip-select__opt-item&quot;&gt;Albania&lt;/li&gt;
-            &lt;li data-value&#x3D;&quot;alg&quot; class&#x3D;&quot;m-ip-select__opt-item&quot;&gt;Algeria&lt;/li&gt;
-            &lt;li data-value&#x3D;&quot;in&quot; class&#x3D;&quot;m-ip-select__opt-item is-checked&quot;&gt;India&lt;/li&gt;
-            &lt;li data-value&#x3D;&quot;indo&quot; class&#x3D;&quot;m-ip-select__opt-item&quot;&gt;Indonesia&lt;/li&gt;
-            &lt;li data-value&#x3D;&quot;uk&quot; class&#x3D;&quot;m-ip-select__opt-item is-checked&quot;&gt;United Kingdom&lt;/li&gt;
-            &lt;li data-value&#x3D;&quot;usa&quot; class&#x3D;&quot;m-ip-select__opt-item&quot;&gt;United States of America&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </details>
-
-            <div class="kss-source kss-style">
-              Source: <code>static/css/src/_m-ip-select.scss</code>, line 234
-            </div>
+          <div class="kss-description">
+        <p>Searchable select-menu with multi-select options.</p>
 
       </div>
-  </article>
-  </main>
-</div>
+    
+    
+            </div>
 
+  <div class="component_details">
+    
+  <div class="kss-default__example">
+    <div class="m-ip-select ">
+    <div class="m-ip-select__overlay"></div>
+    <label class="m-ip-select__label">Country</label>
+    <ul class="m-ip-select__tags-wrapper">
+        <li class="m-ip-select__tag">
+            India
+            <span class="m-ip-select__tag-x"></span>
+        </li>
+        <li class="m-ip-select__tag">
+            United Kingdom
+            <span class="m-ip-select__tag-x"></span>
+        </li>
+    </ul>
+    <div class="m-ip-select__input">
+        <span class="m-ip-select__display is-placeholder">Select</span>
+        <select class="m-ip-select__value" name="country" multiple hidden>
+            <option value="1">Afghanistan</option>
+            <option value="2">Albania</option>
+            <option value="3">Algeria</option>
+            <option value="4">India</option>
+            <option value="5">Indonesia</option>
+            <option value="6">United Kingdom</option>
+            <option value="7">United States of America</option>
+        </select>
+    </div>
+    <div class="m-ip-select__options-wrapper">
+        <input type="search" class="m-ip-select__search" name="search" placeholder="Search" />
+        <ul class="m-ip-select__options m-ip-select__options--multiple">
+            <li data-value="afg" class="m-ip-select__opt-item">Afghanistan</li>
+            <li data-value="alb" class="m-ip-select__opt-item">Albania</li>
+            <li data-value="alg" class="m-ip-select__opt-item">Algeria</li>
+            <li data-value="in" class="m-ip-select__opt-item is-checked">India</li>
+            <li data-value="indo" class="m-ip-select__opt-item">Indonesia</li>
+            <li data-value="uk" class="m-ip-select__opt-item is-checked">United Kingdom</li>
+            <li data-value="usa" class="m-ip-select__opt-item">United States of America</li>
+        </ul>
+    </div>
+</div>
+  </div>
+
+      <div class="kss-modifier__wrapper">
+  
+  <h3>Modifiers for Select Menu (Multiple)</h3>
+
+  <div class="kss-modifiers-list">
+          <div class="kss-modifier__name kss-style">
+        .is-open
+      </div>
+      <div class="kss-modifier__description kss-style">
+        Select menu options visible.
+      </div>
+      <div class="kss-modifier__example"><div class="m-ip-select is-open">
+    <div class="m-ip-select__overlay"></div>
+    <label class="m-ip-select__label">Country</label>
+    <ul class="m-ip-select__tags-wrapper">
+        <li class="m-ip-select__tag">
+            India
+            <span class="m-ip-select__tag-x"></span>
+        </li>
+        <li class="m-ip-select__tag">
+            United Kingdom
+            <span class="m-ip-select__tag-x"></span>
+        </li>
+    </ul>
+    <div class="m-ip-select__input">
+        <span class="m-ip-select__display is-placeholder">Select</span>
+        <select class="m-ip-select__value" name="country" multiple hidden>
+            <option value="1">Afghanistan</option>
+            <option value="2">Albania</option>
+            <option value="3">Algeria</option>
+            <option value="4">India</option>
+            <option value="5">Indonesia</option>
+            <option value="6">United Kingdom</option>
+            <option value="7">United States of America</option>
+        </select>
+    </div>
+    <div class="m-ip-select__options-wrapper">
+        <input type="search" class="m-ip-select__search" name="search" placeholder="Search" />
+        <ul class="m-ip-select__options m-ip-select__options--multiple">
+            <li data-value="afg" class="m-ip-select__opt-item">Afghanistan</li>
+            <li data-value="alb" class="m-ip-select__opt-item">Albania</li>
+            <li data-value="alg" class="m-ip-select__opt-item">Algeria</li>
+            <li data-value="in" class="m-ip-select__opt-item is-checked">India</li>
+            <li data-value="indo" class="m-ip-select__opt-item">Indonesia</li>
+            <li data-value="uk" class="m-ip-select__opt-item is-checked">United Kingdom</li>
+            <li data-value="usa" class="m-ip-select__opt-item">United States of America</li>
+        </ul>
+    </div>
+</div></div>
+      <div class="kss-modifier__example-footer"></div>
+      </div>
+
+  </div>
+  
+      <div class="kss-markup kss-style">
+  <h3>Markup for Select Menu (Multiple)</h3>
+  <pre class="hljs"><code class="language-twig"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select [modifier class]&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__overlay&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__label&quot;</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__tags-wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__tag&quot;</span>&gt;</span>
+            India
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__tag-x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__tag&quot;</span>&gt;</span>
+            United Kingdom
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__tag-x&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__input&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__display is-placeholder&quot;</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__value&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;country&quot;</span> <span class="hljs-attr">multiple</span> <span class="hljs-attr">hidden</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>Afghanistan<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Albania<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Algeria<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>India<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Indonesia<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;6&quot;</span>&gt;</span>United Kingdom<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;7&quot;</span>&gt;</span>United States of America<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__options-wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__search&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Search&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__options m-ip-select__options--multiple&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-value</span>=<span class="hljs-string">&quot;afg&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__opt-item&quot;</span>&gt;</span>Afghanistan<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-value</span>=<span class="hljs-string">&quot;alb&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__opt-item&quot;</span>&gt;</span>Albania<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-value</span>=<span class="hljs-string">&quot;alg&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__opt-item&quot;</span>&gt;</span>Algeria<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-value</span>=<span class="hljs-string">&quot;in&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__opt-item is-checked&quot;</span>&gt;</span>India<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-value</span>=<span class="hljs-string">&quot;indo&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__opt-item&quot;</span>&gt;</span>Indonesia<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-value</span>=<span class="hljs-string">&quot;uk&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__opt-item is-checked&quot;</span>&gt;</span>United Kingdom<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-value</span>=<span class="hljs-string">&quot;usa&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;m-ip-select__opt-item&quot;</span>&gt;</span>United States of America<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+</div>
+  
+  <div class="controls">
+          <a class="modifiers_toggle" href="#">Modifiers</a>
+              <a class="markup_toggle" href="#">Markup</a>
+      </div>
+
+
+  </div>
+
+  </section>
+                  
+  <a class="sidebar-toggle" href="#"><span>☰</span></a>
+  <aside class="kss-sidebar kss-style">
+
+  <header class="kss-header">
+  <h1 class="kss-doc-title page__heading">
+    UI Library
+  </h1>
+</header>
+
+  <nav class="kss-nav">
+
+    <ul class="kss-nav__menu">
+
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./index.html">
+          <span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+
+              <li class="kss-nav__menu-item  " data-section="Base">
+          <a class="kss-nav__menu-link" href="section-base.html">
+            <span class="kss-nav__name">Base</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-base.html#kssref-base-blockquote">
+                  <span class="kss-nav__name">Blockquote</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-base.html#kssref-base-bodytext">
+                  <span class="kss-nav__name">Body text</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-base.html#kssref-base-headings">
+                  <span class="kss-nav__name">Headings</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-base.html#kssref-base-links">
+                  <span class="kss-nav__name">Links</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-base.html#kssref-base-orderedlist">
+                  <span class="kss-nav__name">Ordered list</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-base.html#kssref-base-unorderedlist">
+                  <span class="kss-nav__name">Unordered list</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="Buttons">
+          <a class="kss-nav__menu-link" href="section-buttons.html">
+            <span class="kss-nav__name">Buttons</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-buttons.html#kssref-buttons-colors">
+                  <span class="kss-nav__name">Buttons (colors)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-buttons.html#kssref-buttons-sizes">
+                  <span class="kss-nav__name">Buttons (sizes)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-buttons.html#kssref-buttons-uistates">
+                  <span class="kss-nav__name">Buttons (UI states)</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="Checkbox">
+          <a class="kss-nav__menu-link" href="section-checkbox.html">
+            <span class="kss-nav__name">Checkbox</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-checked">
+                  <span class="kss-nav__name">Checkbox (checked)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-disabled">
+                  <span class="kss-nav__name">Checkbox (disabled)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-inline">
+                  <span class="kss-nav__name">Checkbox (inline)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-uistates">
+                  <span class="kss-nav__name">Checkbox (UI states)</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="Dialog">
+          <a class="kss-nav__menu-link" href="section-dialog.html">
+            <span class="kss-nav__name">Dialog</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-dialog.html#kssref-dialog-alert">
+                  <span class="kss-nav__name">Alert Dialog</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-dialog.html#kssref-dialog-confirm">
+                  <span class="kss-nav__name">Confirm Dialog</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="Messages">
+          <a class="kss-nav__menu-link" href="section-messages.html">
+            <span class="kss-nav__name">Messages</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-messages.html#kssref-messages-dismissible">
+                  <span class="kss-nav__name">Dismissible messages</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-messages.html#kssref-messages-levels">
+                  <span class="kss-nav__name">Messages (levels)</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="Pagination">
+          <a class="kss-nav__menu-link" href="section-pagination.html">
+            <span class="kss-nav__name">Pagination</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-pagination.html#kssref-pagination-current">
+                  <span class="kss-nav__name">Pagination</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="Radio">
+          <a class="kss-nav__menu-link" href="section-radio.html">
+            <span class="kss-nav__name">Radio</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-radio.html#kssref-radio-checked">
+                  <span class="kss-nav__name">Radio (checked)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-radio.html#kssref-radio-disabled">
+                  <span class="kss-nav__name">Radio (disabled)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-radio.html#kssref-radio-inline">
+                  <span class="kss-nav__name">Radio (inline)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-radio.html#kssref-radio-uistates">
+                  <span class="kss-nav__name">Radio (UI states)</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="Segmented controls">
+          <a class="kss-nav__menu-link" href="section-segmentedcontrol.html">
+            <span class="kss-nav__name">Segmented controls</span>
+                      </a>
+
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="SelectMenu">
+          <a class="kss-nav__menu-link" href="section-selectmenu.html">
+            <span class="kss-nav__name">SelectMenu</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item active">
+                <a class="kss-nav__menu-link" href="section-selectmenu.html#kssref-selectmenu-multiple">
+                  <span class="kss-nav__name">Select Menu (Multiple)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-selectmenu.html#kssref-selectmenu-uistates">
+                  <span class="kss-nav__name">Select Menu</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="Textarea">
+          <a class="kss-nav__menu-link" href="section-textarea.html">
+            <span class="kss-nav__name">Textarea</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-textarea.html#kssref-textarea-disabled">
+                  <span class="kss-nav__name">Textarea (disabled)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-textarea.html#kssref-textarea-uistates">
+                  <span class="kss-nav__name">Textarea (UI States)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-textarea.html#kssref-textarea-validationstates">
+                  <span class="kss-nav__name">Textarea (Validation states)</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+              <li class="kss-nav__menu-item  " data-section="Textbox">
+          <a class="kss-nav__menu-link" href="section-textbox.html">
+            <span class="kss-nav__name">Textbox</span>
+                        <span class="kss-nav__menu-child-actuator">☰</span>
+                      </a>
+
+                      <ul class="kss-nav__menu-child">
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-textbox.html#kssref-textbox-disabled">
+                  <span class="kss-nav__name">Textbox (disabled)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-textbox.html#kssref-textbox-uistates">
+                  <span class="kss-nav__name">Textbox (UI States)</span>
+                </a>
+              </li>
+                          <li class="kss-nav__menu-item ">
+                <a class="kss-nav__menu-link" href="section-textbox.html#kssref-textbox-validationstates">
+                  <span class="kss-nav__name">Textbox (Validation states)</span>
+                </a>
+              </li>
+                        </ul>
+          
+        </li>
+          </ul>
+  </nav>
+</aside>
+
+</main>
 
 <!-- SCRIPTS -->
 <script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
 <script src="kss-assets/kss-fullscreen.js"></script>
-<script src="kss-assets/kss-singlesection.js"></script>
 <script src="kss-assets/kss-guides.js"></script>
-<script src="kss-assets/search.js"></script>
 <script src="kss-assets/kss-markup.js"></script>
-<script src="kss-assets/prismjs.js" data-manual></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vex-js/3.0.0/js/vex.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="kss-assets/kstat-kss.js"></script>
+
+<!-- script inclusion configurable through kss-config.json -->
+
 <script>
-  var kssSingleSection = new KssSingleSection();
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-item.active .kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
   var kssFullScreen = new KssFullScreen({
     idPrefix: 'kss-fullscreen-',
     bodyClass: 'kss-fullscreen-mode',
@@ -633,5 +522,8 @@
 </script>
 
 
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
 </body>
 </html>
