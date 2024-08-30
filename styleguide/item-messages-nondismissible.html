@@ -416,26 +416,26 @@
   <main class="kss-main" aria-label="Content">
     <article>
 
-      <div id="kssref-radio-inline" class="kss-section kss-section--depth-2 is-fullscreen">
+      <div id="kssref-messages-nondismissible" class="kss-section kss-section--depth-2 is-fullscreen">
         <div class="kss-style kss-style--header  ">
-          <a class="kss-title__permalink" href="#kssref-radio-inline">
+          <a class="kss-title__permalink" href="#kssref-messages-nondismissible">
             <h2 class="kss-title kss-title--level-2 kss-style ">
-                Radio (inline)
+                Non dismissible messages
             </h2>
           </a>
             <p class="kss-toolbar">
-              <a class="kss-toolbar__link kss-toolbar__link--guides" title="Toggle example guides" href="#kssref-radio-inline" data-kss-guides="true">
+              <a class="kss-toolbar__link kss-toolbar__link--guides" title="Toggle example guides" href="#kssref-messages-nondismissible" data-kss-guides="true">
                 <span class="kss-toolbar__tooltip">Toggle example guides</span>
                 <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M5 35H10V44H5zM54 21H59V30H54zM54 35H59V44H54zM5 21H10V30H5zM5 0H10V15H5zM35 5H44V10H35zM20 5H29V10H20z"/><path class="kss-toolbar__icon-fill" d="M0 5H15V10H0zM54 0H59V15H54z"/><path class="kss-toolbar__icon-fill" d="M49 5H64V10H49zM54 49H59V64H54z"/><path class="kss-toolbar__icon-fill" d="M49 54H64V59H49zM5 49H10V64H5z"/><path class="kss-toolbar__icon-fill" d="M0 54H15V59H0zM35 54H44V59H35zM20 54H29V59H20z"/></svg>
               </a>
-              <a class="kss-toolbar__link kss-toolbar__link--markup" title="Toggle HTML markup" href="#kssref-radio-inline" data-kss-markup="true">
+              <a class="kss-toolbar__link kss-toolbar__link--markup" title="Toggle HTML markup" href="#kssref-messages-nondismissible" data-kss-markup="true">
                 <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
                 <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M37.555 46.239l6.103 6.103 20.342-20.342-20.342-20.342-6.103 6.103 14.24 14.239-14.24 14.239zM26.445 17.761l-6.103-6.103-20.342 20.342 20.342 20.342 6.103-6.103-14.24-14.239 14.24-14.239z"/></svg>
               </a>
             </p>
 
             <div class="kss-description">
-              <p>Input radio displayed inline.</p>
+              <p>Non dismissible Messages.</p>
 
             </div>
 
@@ -445,20 +445,44 @@
           <div class="kss-modifier__wrapper">
             <div class="kss-modifier__defaultheader kss-style">
               <div class="kss-modifier__defaultinsertmarkuptext">
-                &lt;insert-markup&gt;radio.inline-&lt;/insert-markup&gt;
+                &lt;insert-markup&gt;messages.nondismissible-&lt;/insert-markup&gt;
               </div>
-              <a title="open in a new window" class="" href="index-radio-inline_default.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
+              <a title="open in a new window" class="" href="index-messages-nondismissible_default.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
             </div>
 
             <div class="kss-modifier__example  ">
-                <div class="m-ip-radio m-ip-radio--inline">
-    <input type="radio" class="m-ip-radio__input" id="il-gender-male" name="il_gender" value="male">
-    <label class="m-ip-radio__label" for="il-gender-male" tabindex="0">Male</label>
-</div>
-<div class="m-ip-radio m-ip-radio--inline">
-    <input type="radio" class="m-ip-radio__input" id="il-gender-female" name="il_gender" value="female">
-    <label class="m-ip-radio__label" for="il-gender-female" tabindex="0">Female</label>
-</div>
+                <ul class="m-messages">
+    <li class="m-messages__item">
+        <span class="m-messages__desc">
+            <span class="m-messages__level">LEVEL</span>
+            This message is NOT dismissible.
+        </span>
+    </li>
+</ul>
+<ul class="m-messages">
+    <li class="m-messages__item m-messages__item--error">
+        <span class="m-messages__desc">
+            <span class="m-messages__level">LEVEL</span>
+            This message is NOT dismissible.
+        </span>
+    </li>
+</ul>
+<ul class="m-messages">
+    <li class="m-messages__item m-messages__item--warning">
+        <span class="m-messages__desc">
+            <span class="m-messages__level">LEVEL</span>
+            This message is NOT dismissible.
+        </span>
+    </li>
+</ul>
+<ul class="m-messages">
+    <li class="m-messages__item m-messages__item--success">
+        <span class="m-messages__desc">
+            <span class="m-messages__level">LEVEL</span>
+            This message is NOT dismissible.
+        </span>
+    </li>
+</ul>
               <div class="kss-modifier__example-footer"></div>
             </div>
           </div>
@@ -467,18 +491,42 @@
               <summary>
                   Markup
               </summary>
-              <pre><code class="lang-markup">&lt;div class&#x3D;&quot;m-ip-radio m-ip-radio--inline&quot;&gt;
-    &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;m-ip-radio__input&quot; id&#x3D;&quot;il-gender-male&quot; name&#x3D;&quot;il_gender&quot; value&#x3D;&quot;male&quot;&gt;
-    &lt;label class&#x3D;&quot;m-ip-radio__label&quot; for&#x3D;&quot;il-gender-male&quot; tabindex&#x3D;&quot;0&quot;&gt;Male&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class&#x3D;&quot;m-ip-radio m-ip-radio--inline&quot;&gt;
-    &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;m-ip-radio__input&quot; id&#x3D;&quot;il-gender-female&quot; name&#x3D;&quot;il_gender&quot; value&#x3D;&quot;female&quot;&gt;
-    &lt;label class&#x3D;&quot;m-ip-radio__label&quot; for&#x3D;&quot;il-gender-female&quot; tabindex&#x3D;&quot;0&quot;&gt;Female&lt;/label&gt;
-&lt;/div&gt;</code></pre>
+              <pre><code class="lang-markup">&lt;ul class&#x3D;&quot;m-messages&quot;&gt;
+    &lt;li class&#x3D;&quot;m-messages__item&quot;&gt;
+        &lt;span class&#x3D;&quot;m-messages__desc&quot;&gt;
+            &lt;span class&#x3D;&quot;m-messages__level&quot;&gt;LEVEL&lt;/span&gt;
+            This message is NOT dismissible.
+        &lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class&#x3D;&quot;m-messages&quot;&gt;
+    &lt;li class&#x3D;&quot;m-messages__item m-messages__item--error&quot;&gt;
+        &lt;span class&#x3D;&quot;m-messages__desc&quot;&gt;
+            &lt;span class&#x3D;&quot;m-messages__level&quot;&gt;LEVEL&lt;/span&gt;
+            This message is NOT dismissible.
+        &lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class&#x3D;&quot;m-messages&quot;&gt;
+    &lt;li class&#x3D;&quot;m-messages__item m-messages__item--warning&quot;&gt;
+        &lt;span class&#x3D;&quot;m-messages__desc&quot;&gt;
+            &lt;span class&#x3D;&quot;m-messages__level&quot;&gt;LEVEL&lt;/span&gt;
+            This message is NOT dismissible.
+        &lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class&#x3D;&quot;m-messages&quot;&gt;
+    &lt;li class&#x3D;&quot;m-messages__item m-messages__item--success&quot;&gt;
+        &lt;span class&#x3D;&quot;m-messages__desc&quot;&gt;
+            &lt;span class&#x3D;&quot;m-messages__level&quot;&gt;LEVEL&lt;/span&gt;
+            This message is NOT dismissible.
+        &lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
             </details>
 
             <div class="kss-source kss-style">
-              Source: <code>static/css/src/_m-ip-radio.scss</code>, line 112
+              Source: <code>static/css/src/_m-messages.scss</code>, line 146
             </div>
 
       </div>
