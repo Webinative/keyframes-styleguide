@@ -1,2 +1,5 @@
 # keyframes-styleguide
-KSS Style guide for Keyframes app
+
+Browsable style guide for the [Keyframes](https://github.com/webinative/keyframes) app generated using [KSS](https://www.npmjs.com/package/kss).
+
+[Click here](./styleguide/) to get started.
