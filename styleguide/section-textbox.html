@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UI Library</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <link rel="icon" href="kss-assets/kss-favicon.svg">
+  <link rel="stylesheet" href="kss-assets/kss-theme.css">
+  <link rel="stylesheet" href="kss-assets/kss.min.css">
+  <link rel="stylesheet" href="kss-assets/prism.css">
+  <link rel="stylesheet" href="../static/css/dist/kss_overrides.css"/>
+<link rel="stylesheet" href="../static/css/dist/main.css"/>
+
+</head>
+<body class="kss-scheibo__body" id="kss-node" >
+
+<header class="kss-header">
+  <h1 class="kss-doc-title">UI Library</h1>
+</header>
+<div class="kss-container">
+  <div class="kss-sidebar kss-style">
+    <div class="kss-search">
+      <input type="text" class="kss-search__input" id="kss-search__input" placeholder="Search">
+      <ul class="kss-search__list kss-nav__menu" id="kss-search__list">
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-base.html">
+              <span class="kss-nav__ref">1</span><span class="kss-nav__name">Base</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-blockquote" data-singlesectiontrigger="kssref-base-blockquote">
+                        <span class="kss-nav__ref">1.1</span><span class="kss-nav__name">Blockquote</span>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-bodytext" data-singlesectiontrigger="kssref-base-bodytext">
+                        <span class="kss-nav__ref">1.2</span><span class="kss-nav__name">Body text</span>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-headings" data-singlesectiontrigger="kssref-base-headings">
+                        <span class="kss-nav__ref">1.3</span><span class="kss-nav__name">Headings</span>
+                            <div class="kss-search__desc">
+                                <p>Headings H1 to H6.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-links" data-singlesectiontrigger="kssref-base-links">
+                        <span class="kss-nav__ref">1.4</span><span class="kss-nav__name">Links</span>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-orderedlist" data-singlesectiontrigger="kssref-base-orderedlist">
+                        <span class="kss-nav__ref">1.5</span><span class="kss-nav__name">Ordered list</span>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-base.html#kssref-base-unorderedlist" data-singlesectiontrigger="kssref-base-unorderedlist">
+                        <span class="kss-nav__ref">1.6</span><span class="kss-nav__name">Unordered list</span>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-buttons.html">
+              <span class="kss-nav__ref">2</span><span class="kss-nav__name">Buttons</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-buttons.html#kssref-buttons-colors" data-singlesectiontrigger="kssref-buttons-colors">
+                        <span class="kss-nav__ref">2.1</span><span class="kss-nav__name">Buttons (colors)</span>
+                            <div class="kss-search__desc">
+                                <p>Buttons with different colors.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-buttons.html#kssref-buttons-sizes" data-singlesectiontrigger="kssref-buttons-sizes">
+                        <span class="kss-nav__ref">2.2</span><span class="kss-nav__name">Buttons (sizes)</span>
+                            <div class="kss-search__desc">
+                                <p>Buttons with different sizes.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-buttons.html#kssref-buttons-uistates" data-singlesectiontrigger="kssref-buttons-uistates">
+                        <span class="kss-nav__ref">2.3</span><span class="kss-nav__name">Buttons (UI states)</span>
+                            <div class="kss-search__desc">
+                                <p>Buttons user-interaction states.</p>
+
+                            </div>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-checkbox.html">
+              <span class="kss-nav__ref">3</span><span class="kss-nav__name">Checkbox</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-checked" data-singlesectiontrigger="kssref-checkbox-checked">
+                        <span class="kss-nav__ref">3.1</span><span class="kss-nav__name">Checkbox (checked)</span>
+                            <div class="kss-search__desc">
+                                <p>Input checkbox checked state.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-disabled" data-singlesectiontrigger="kssref-checkbox-disabled">
+                        <span class="kss-nav__ref">3.2</span><span class="kss-nav__name">Checkbox (disabled)</span>
+                            <div class="kss-search__desc">
+                                <p>Inputheckbox disabled state.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-inline" data-singlesectiontrigger="kssref-checkbox-inline">
+                        <span class="kss-nav__ref">3.3</span><span class="kss-nav__name">Checkbox (inline)</span>
+                            <div class="kss-search__desc">
+                                <p>Input checkbox displayed inline.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-checkbox.html#kssref-checkbox-uistates" data-singlesectiontrigger="kssref-checkbox-uistates">
+                        <span class="kss-nav__ref">3.4</span><span class="kss-nav__name">Checkbox (UI states)</span>
+                            <div class="kss-search__desc">
+                                <p>Input checkbox user-interaction state.</p>
+
+                            </div>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-dialog.html">
+              <span class="kss-nav__ref">4</span><span class="kss-nav__name">Dialog</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-dialog.html#kssref-dialog-alert" data-singlesectiontrigger="kssref-dialog-alert">
+                        <span class="kss-nav__ref">4.1</span><span class="kss-nav__name">Alert Dialog</span>
+                            <div class="kss-search__desc">
+                                <p>Alert Dialog.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-dialog.html#kssref-dialog-confirm" data-singlesectiontrigger="kssref-dialog-confirm">
+                        <span class="kss-nav__ref">4.2</span><span class="kss-nav__name">Confirm Dialog</span>
+                            <div class="kss-search__desc">
+                                <p>confirm Dialog.</p>
+
+                            </div>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-messages.html">
+              <span class="kss-nav__ref">5</span><span class="kss-nav__name">Messages</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-messages.html#kssref-messages-dismissible" data-singlesectiontrigger="kssref-messages-dismissible">
+                        <span class="kss-nav__ref">5.1</span><span class="kss-nav__name">Dismissible messages</span>
+                            <div class="kss-search__desc">
+                                <p>Dismissible Messages.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-messages.html#kssref-messages-levels" data-singlesectiontrigger="kssref-messages-levels">
+                        <span class="kss-nav__ref">5.2</span><span class="kss-nav__name">Messages (levels)</span>
+                            <div class="kss-search__desc">
+                                <p>Messages with different levels.</p>
+
+                            </div>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-pagination.html">
+              <span class="kss-nav__ref">6</span><span class="kss-nav__name">Pagination</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-pagination.html#kssref-pagination-current" data-singlesectiontrigger="kssref-pagination-current">
+                        <span class="kss-nav__ref">6.1</span><span class="kss-nav__name">Pagination</span>
+                            <div class="kss-search__desc">
+                                <p>Displays page numbers.</p>
+
+                            </div>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-radio.html">
+              <span class="kss-nav__ref">7</span><span class="kss-nav__name">Radio</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-radio.html#kssref-radio-checked" data-singlesectiontrigger="kssref-radio-checked">
+                        <span class="kss-nav__ref">7.1</span><span class="kss-nav__name">Radio (checked)</span>
+                            <div class="kss-search__desc">
+                                <p>Input radio checked state.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-radio.html#kssref-radio-disabled" data-singlesectiontrigger="kssref-radio-disabled">
+                        <span class="kss-nav__ref">7.2</span><span class="kss-nav__name">Radio (disabled)</span>
+                            <div class="kss-search__desc">
+                                <p>Input radio disabled state.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-radio.html#kssref-radio-inline" data-singlesectiontrigger="kssref-radio-inline">
+                        <span class="kss-nav__ref">7.3</span><span class="kss-nav__name">Radio (inline)</span>
+                            <div class="kss-search__desc">
+                                <p>Input radio displayed inline.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-radio.html#kssref-radio-uistates" data-singlesectiontrigger="kssref-radio-uistates">
+                        <span class="kss-nav__ref">7.4</span><span class="kss-nav__name">Radio (UI states)</span>
+                            <div class="kss-search__desc">
+                                <p>Input radio user-interaction state.</p>
+
+                            </div>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  " href="section-segmentedcontrol.html">
+              <span class="kss-nav__ref">8</span><span class="kss-nav__name">Segmented controls</span>
+                  <div class="kss-search__desc">
+                      <p>Tab-like controls for use with icons inspired by macOS.</p>
+
+                  </div>
+          </a>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-selectmenu.html">
+              <span class="kss-nav__ref">9</span><span class="kss-nav__name">SelectMenu</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-selectmenu.html#kssref-selectmenu-multiple" data-singlesectiontrigger="kssref-selectmenu-multiple">
+                        <span class="kss-nav__ref">9.1</span><span class="kss-nav__name">Select Menu (Multiple)</span>
+                            <div class="kss-search__desc">
+                                <p>Searchable select-menu with multi-select options.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-selectmenu.html#kssref-selectmenu-uistates" data-singlesectiontrigger="kssref-selectmenu-uistates">
+                        <span class="kss-nav__ref">9.2</span><span class="kss-nav__name">Select Menu</span>
+                            <div class="kss-search__desc">
+                                <p>Select-menu with searchable options.</p>
+
+                            </div>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-textarea.html">
+              <span class="kss-nav__ref">10</span><span class="kss-nav__name">Textarea</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-textarea.html#kssref-textarea-disabled" data-singlesectiontrigger="kssref-textarea-disabled">
+                        <span class="kss-nav__ref">10.1</span><span class="kss-nav__name">Textarea (disabled)</span>
+                            <div class="kss-search__desc">
+                                <p>Input textarea disabled state.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-textarea.html#kssref-textarea-uistates" data-singlesectiontrigger="kssref-textarea-uistates">
+                        <span class="kss-nav__ref">10.2</span><span class="kss-nav__name">Textarea (UI States)</span>
+                            <div class="kss-search__desc">
+                                <p>Input textarea user-interaction states.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-textarea.html#kssref-textarea-validationstates" data-singlesectiontrigger="kssref-textarea-validationstates">
+                        <span class="kss-nav__ref">10.3</span><span class="kss-nav__name">Textarea (Validation states)</span>
+                            <div class="kss-search__desc">
+                                <p>Input textarea loading and error states.</p>
+
+                            </div>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link is-active has-children" href="section-textbox.html">
+              <span class="kss-nav__ref">11</span><span class="kss-nav__name">Textbox</span>
+          </a>
+              <ul>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-textbox.html#kssref-textbox-disabled" data-singlesectiontrigger="kssref-textbox-disabled">
+                        <span class="kss-nav__ref">11.1</span><span class="kss-nav__name">Textbox (disabled)</span>
+                            <div class="kss-search__desc">
+                                <p>Input textbox disabled state.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-textbox.html#kssref-textbox-uistates" data-singlesectiontrigger="kssref-textbox-uistates">
+                        <span class="kss-nav__ref">11.2</span><span class="kss-nav__name">Textbox (UI States)</span>
+                            <div class="kss-search__desc">
+                                <p>Input textbox user-interaction states.</p>
+
+                            </div>
+                    </a>
+                  </li>
+                  <li class="kss-search__item kss-nav__menu-item ">
+                    <a class="kss-search__link kss-nav__menu-link" href="section-textbox.html#kssref-textbox-validationstates" data-singlesectiontrigger="kssref-textbox-validationstates">
+                        <span class="kss-nav__ref">11.3</span><span class="kss-nav__name">Textbox (Validation states)</span>
+                            <div class="kss-search__desc">
+                                <p>Input textbox loading and error states.</p>
+
+                            </div>
+                    </a>
+                  </li>
+              </ul>
+        </li>
+      </ul>
+    </div>
+    <nav class="kss-nav" aria-label="Style Guide">
+      <ul class="kss-nav__menu">
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link" href="./">
+            <span class="kss-nav__ref">0</span><span class="kss-nav__name">Overview</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-base.html">
+            <span class="kss-nav__ref">1</span><span class="kss-nav__name">Base</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-buttons.html">
+            <span class="kss-nav__ref">2</span><span class="kss-nav__name">Buttons</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-checkbox.html">
+            <span class="kss-nav__ref">3</span><span class="kss-nav__name">Checkbox</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-dialog.html">
+            <span class="kss-nav__ref">4</span><span class="kss-nav__name">Dialog</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-messages.html">
+            <span class="kss-nav__ref">5</span><span class="kss-nav__name">Messages</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-pagination.html">
+            <span class="kss-nav__ref">6</span><span class="kss-nav__name">Pagination</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-radio.html">
+            <span class="kss-nav__ref">7</span><span class="kss-nav__name">Radio</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-segmentedcontrol.html">
+            <span class="kss-nav__ref">8</span><span class="kss-nav__name">Segmented controls</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-selectmenu.html">
+            <span class="kss-nav__ref">9</span><span class="kss-nav__name">SelectMenu</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-textarea.html">
+            <span class="kss-nav__ref">10</span><span class="kss-nav__name">Textarea</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link kss-nav__menu-link--active" href="section-textbox.html">
+            <span class="kss-nav__ref">11</span><span class="kss-nav__name">Textbox</span>
+          </a>
+              <ul class="kss-nav__menu-child">
+                <li class="kss-nav__menu-item">
+                  <span class="kss-nav__menu-link" data-singlesectiontrigger="kssref-textbox-disabled">
+                    <span class="kss-nav__ref ">11.1</span
+                    ><span class="kss-nav__name">Textbox (disabled)</span>
+                  </span>
+                </li>
+                <li class="kss-nav__menu-item">
+                  <span class="kss-nav__menu-link" data-singlesectiontrigger="kssref-textbox-uistates">
+                    <span class="kss-nav__ref ">11.2</span
+                    ><span class="kss-nav__name">Textbox (UI States)</span>
+                  </span>
+                </li>
+                <li class="kss-nav__menu-item">
+                  <span class="kss-nav__menu-link" data-singlesectiontrigger="kssref-textbox-validationstates">
+                    <span class="kss-nav__ref ">11.3</span
+                    ><span class="kss-nav__name">Textbox (Validation states)</span>
+                  </span>
+                </li>
+              </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main class="kss-main" aria-label="Content">
+    <article>
+
+      <div id="kssref-textbox" class="kss-section kss-section--depth-1 ">
+        <div class="kss-style kss-style--header kss-style--maincolor ">
+          <a class="kss-title__permalink" href="#kssref-textbox">
+            <h1 class="kss-title kss-title--level-1 kss-style kss-title--onmaincolor">
+                Textbox
+            </h1>
+          </a>
+
+
+
+        </div>
+
+
+      </div>
+      <section id="kssref-textbox-disabled" class="kss-section kss-section--depth-2 ">
+        <div class="kss-style kss-style--header  ">
+          <a class="kss-title__permalink" href="#kssref-textbox-disabled">
+            <h2 class="kss-title kss-title--level-2 kss-style ">
+                Textbox (disabled)
+            </h2>
+          </a>
+            <p class="kss-toolbar">
+                <a class="kss-toolbar__link kss-toolbar__link--fullscreen" title="Toggle full screen" href="#kssref-textbox-disabled" data-kss-fullscreen="kssref-textbox-disabled">
+                  <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                  <svg aria-hidden="true" class="kss-toolbar__svg kss-toolbar__off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"/></svg>
+                  <svg aria-hidden="true" class="kss-toolbar__svg kss-toolbar__on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"/></svg>
+                </a>
+                <a class="kss-toolbar__link kss-toolbar__link--newwindow" title="Open in new window" href="item-textbox-disabled.html" target="_blank">
+                  <span class="kss-toolbar__tooltip">Open in new window</span>
+                  <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#fff" d="M0 20H40V64H0z"/><path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/><path class="kss-toolbar__icon-fill" d="M0 20H40V30H0z"/><path fill="#fff" d="M24 0H64V44H24z"/><path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/><path class="kss-toolbar__icon-fill" d="M24 0H64V10H24z"/></svg>
+                </a>
+              <a class="kss-toolbar__link kss-toolbar__link--guides" title="Toggle example guides" href="#kssref-textbox-disabled" data-kss-guides="true">
+                <span class="kss-toolbar__tooltip">Toggle example guides</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M5 35H10V44H5zM54 21H59V30H54zM54 35H59V44H54zM5 21H10V30H5zM5 0H10V15H5zM35 5H44V10H35zM20 5H29V10H20z"/><path class="kss-toolbar__icon-fill" d="M0 5H15V10H0zM54 0H59V15H54z"/><path class="kss-toolbar__icon-fill" d="M49 5H64V10H49zM54 49H59V64H54z"/><path class="kss-toolbar__icon-fill" d="M49 54H64V59H49zM5 49H10V64H5z"/><path class="kss-toolbar__icon-fill" d="M0 54H15V59H0zM35 54H44V59H35zM20 54H29V59H20z"/></svg>
+              </a>
+              <a class="kss-toolbar__link kss-toolbar__link--markup" title="Toggle HTML markup" href="#kssref-textbox-disabled" data-kss-markup="true">
+                <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M37.555 46.239l6.103 6.103 20.342-20.342-20.342-20.342-6.103 6.103 14.24 14.239-14.24 14.239zM26.445 17.761l-6.103-6.103-20.342 20.342 20.342 20.342 6.103-6.103-14.24-14.239 14.24-14.239z"/></svg>
+              </a>
+            </p>
+
+            <div class="kss-description">
+              <p>Input textbox disabled state.</p>
+
+            </div>
+
+
+        </div>
+
+          <div class="kss-modifier__wrapper">
+            <div class="kss-modifier__defaultheader kss-style">
+              <div class="kss-modifier__defaultinsertmarkuptext">
+                &lt;insert-markup&gt;textbox.disabled-&lt;/insert-markup&gt;
+              </div>
+              <a title="open in a new window" class="" href="index-textbox-disabled_default.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
+            </div>
+
+            <div class="kss-modifier__example  ">
+                <div class="m-ip-textbox">
+    <label class="m-ip-textbox__label" for="disabled">Full name</label>
+    <input class="m-ip-textbox__input" type="text" id="disabled" name="full_name" placeholder="Disabled input"
+        disabled>
+</div>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+          </div>
+
+            <details class="kss-markup kss-style">
+              <summary>
+                  Markup
+              </summary>
+              <pre><code class="lang-markup">&lt;div class&#x3D;&quot;m-ip-textbox&quot;&gt;
+    &lt;label class&#x3D;&quot;m-ip-textbox__label&quot; for&#x3D;&quot;disabled&quot;&gt;Full name&lt;/label&gt;
+    &lt;input class&#x3D;&quot;m-ip-textbox__input&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;disabled&quot; name&#x3D;&quot;full_name&quot; placeholder&#x3D;&quot;Disabled input&quot;
+        disabled&gt;
+&lt;/div&gt;</code></pre>
+            </details>
+
+            <div class="kss-source kss-style">
+              Source: <code>static/css/src/_m-ip-textbox.scss</code>, line 121
+            </div>
+
+      </section>
+      <section id="kssref-textbox-uistates" class="kss-section kss-section--depth-2 ">
+        <div class="kss-style kss-style--header  ">
+          <a class="kss-title__permalink" href="#kssref-textbox-uistates">
+            <h2 class="kss-title kss-title--level-2 kss-style ">
+                Textbox (UI States)
+            </h2>
+          </a>
+            <p class="kss-toolbar">
+                <a class="kss-toolbar__link kss-toolbar__link--fullscreen" title="Toggle full screen" href="#kssref-textbox-uistates" data-kss-fullscreen="kssref-textbox-uistates">
+                  <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                  <svg aria-hidden="true" class="kss-toolbar__svg kss-toolbar__off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"/></svg>
+                  <svg aria-hidden="true" class="kss-toolbar__svg kss-toolbar__on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"/></svg>
+                </a>
+                <a class="kss-toolbar__link kss-toolbar__link--newwindow" title="Open in new window" href="item-textbox-uistates.html" target="_blank">
+                  <span class="kss-toolbar__tooltip">Open in new window</span>
+                  <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#fff" d="M0 20H40V64H0z"/><path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/><path class="kss-toolbar__icon-fill" d="M0 20H40V30H0z"/><path fill="#fff" d="M24 0H64V44H24z"/><path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/><path class="kss-toolbar__icon-fill" d="M24 0H64V10H24z"/></svg>
+                </a>
+              <a class="kss-toolbar__link kss-toolbar__link--guides" title="Toggle example guides" href="#kssref-textbox-uistates" data-kss-guides="true">
+                <span class="kss-toolbar__tooltip">Toggle example guides</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M5 35H10V44H5zM54 21H59V30H54zM54 35H59V44H54zM5 21H10V30H5zM5 0H10V15H5zM35 5H44V10H35zM20 5H29V10H20z"/><path class="kss-toolbar__icon-fill" d="M0 5H15V10H0zM54 0H59V15H54z"/><path class="kss-toolbar__icon-fill" d="M49 5H64V10H49zM54 49H59V64H54z"/><path class="kss-toolbar__icon-fill" d="M49 54H64V59H49zM5 49H10V64H5z"/><path class="kss-toolbar__icon-fill" d="M0 54H15V59H0zM35 54H44V59H35zM20 54H29V59H20z"/></svg>
+              </a>
+              <a class="kss-toolbar__link kss-toolbar__link--markup" title="Toggle HTML markup" href="#kssref-textbox-uistates" data-kss-markup="true">
+                <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M37.555 46.239l6.103 6.103 20.342-20.342-20.342-20.342-6.103 6.103 14.24 14.239-14.24 14.239zM26.445 17.761l-6.103-6.103-20.342 20.342 20.342 20.342 6.103-6.103-14.24-14.239 14.24-14.239z"/></svg>
+              </a>
+            </p>
+
+            <div class="kss-description">
+              <p>Input textbox user-interaction states.</p>
+
+            </div>
+
+
+        </div>
+
+          <div class="kss-modifier__wrapper">
+            <div class="kss-modifier__defaultheader kss-style">
+              <div class="kss-modifier__defaultinsertmarkuptext">
+                &lt;insert-markup&gt;textbox.uistates-&lt;/insert-markup&gt;
+              </div>
+              <a title="open in a new window" class="" href="index-textbox-uistates_default.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
+            </div>
+
+            <div class="kss-modifier__example  ">
+                <div class="m-ip-textbox">
+    <label class="m-ip-textbox__label" for="first-name">First Name</label>
+    <span class="m-ip-textbox__help-text">Help text to fill in this value.</span>
+    <span class="m-ip-textbox__error">Error message.</span>
+    <input type="text" id="first-name" class="m-ip-textbox__input " name="first_name" value="Magesh">
+</div>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+              <div class="kss-modifier__header">
+                <div>
+                  <div class="kss-modifier__name kss-style">
+                    :focus
+                  </div>
+                  <div class="kss-modifier__description kss-style">
+                    an element that received focus.
+                  </div>
+                  <div class="kss-modifier__insertmarkuptext kss-style">
+                    &lt;insert-markup&gt;textbox.uistates-0&lt;/insert-markup&gt;
+                  </div>
+                </div>
+                <a title="open in a new window" class="" href="index-textbox-uistates_0.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
+              </div>
+              <div class="kss-modifier__example ">
+                  <div class="m-ip-textbox">
+    <label class="m-ip-textbox__label" for="first-name">First Name</label>
+    <span class="m-ip-textbox__help-text">Help text to fill in this value.</span>
+    <span class="m-ip-textbox__error">Error message.</span>
+    <input type="text" id="first-name" class="m-ip-textbox__input pseudo-class-focus" name="first_name" value="Magesh">
+</div>
+                <div class="kss-modifier__example-footer"></div>
+              </div>
+          </div>
+
+            <details class="kss-markup kss-style">
+              <summary>
+                  Markup
+              </summary>
+              <pre><code class="lang-markup">&lt;div class&#x3D;&quot;m-ip-textbox&quot;&gt;
+    &lt;label class&#x3D;&quot;m-ip-textbox__label&quot; for&#x3D;&quot;first-name&quot;&gt;First Name&lt;/label&gt;
+    &lt;span class&#x3D;&quot;m-ip-textbox__help-text&quot;&gt;Help text to fill in this value.&lt;/span&gt;
+    &lt;span class&#x3D;&quot;m-ip-textbox__error&quot;&gt;Error message.&lt;/span&gt;
+    &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;first-name&quot; class&#x3D;&quot;m-ip-textbox__input [modifier class]&quot; name&#x3D;&quot;first_name&quot; value&#x3D;&quot;Magesh&quot;&gt;
+&lt;/div&gt;</code></pre>
+            </details>
+
+            <div class="kss-source kss-style">
+              Source: <code>static/css/src/_m-ip-textbox.scss</code>, line 1
+            </div>
+
+      </section>
+      <section id="kssref-textbox-validationstates" class="kss-section kss-section--depth-2 ">
+        <div class="kss-style kss-style--header  ">
+          <a class="kss-title__permalink" href="#kssref-textbox-validationstates">
+            <h2 class="kss-title kss-title--level-2 kss-style ">
+                Textbox (Validation states)
+            </h2>
+          </a>
+            <p class="kss-toolbar">
+                <a class="kss-toolbar__link kss-toolbar__link--fullscreen" title="Toggle full screen" href="#kssref-textbox-validationstates" data-kss-fullscreen="kssref-textbox-validationstates">
+                  <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                  <svg aria-hidden="true" class="kss-toolbar__svg kss-toolbar__off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"/></svg>
+                  <svg aria-hidden="true" class="kss-toolbar__svg kss-toolbar__on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"/></svg>
+                </a>
+                <a class="kss-toolbar__link kss-toolbar__link--newwindow" title="Open in new window" href="item-textbox-validationstates.html" target="_blank">
+                  <span class="kss-toolbar__tooltip">Open in new window</span>
+                  <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#fff" d="M0 20H40V64H0z"/><path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/><path class="kss-toolbar__icon-fill" d="M0 20H40V30H0z"/><path fill="#fff" d="M24 0H64V44H24z"/><path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/><path class="kss-toolbar__icon-fill" d="M24 0H64V10H24z"/></svg>
+                </a>
+              <a class="kss-toolbar__link kss-toolbar__link--guides" title="Toggle example guides" href="#kssref-textbox-validationstates" data-kss-guides="true">
+                <span class="kss-toolbar__tooltip">Toggle example guides</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M5 35H10V44H5zM54 21H59V30H54zM54 35H59V44H54zM5 21H10V30H5zM5 0H10V15H5zM35 5H44V10H35zM20 5H29V10H20z"/><path class="kss-toolbar__icon-fill" d="M0 5H15V10H0zM54 0H59V15H54z"/><path class="kss-toolbar__icon-fill" d="M49 5H64V10H49zM54 49H59V64H54z"/><path class="kss-toolbar__icon-fill" d="M49 54H64V59H49zM5 49H10V64H5z"/><path class="kss-toolbar__icon-fill" d="M0 54H15V59H0zM35 54H44V59H35zM20 54H29V59H20z"/></svg>
+              </a>
+              <a class="kss-toolbar__link kss-toolbar__link--markup" title="Toggle HTML markup" href="#kssref-textbox-validationstates" data-kss-markup="true">
+                <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M37.555 46.239l6.103 6.103 20.342-20.342-20.342-20.342-6.103 6.103 14.24 14.239-14.24 14.239zM26.445 17.761l-6.103-6.103-20.342 20.342 20.342 20.342 6.103-6.103-14.24-14.239 14.24-14.239z"/></svg>
+              </a>
+            </p>
+
+            <div class="kss-description">
+              <p>Input textbox loading and error states.</p>
+
+            </div>
+
+
+        </div>
+
+          <div class="kss-modifier__wrapper">
+            <div class="kss-modifier__defaultheader kss-style">
+              <div class="kss-modifier__defaultinsertmarkuptext">
+                &lt;insert-markup&gt;textbox.validationstates-&lt;/insert-markup&gt;
+              </div>
+              <a title="open in a new window" class="" href="index-textbox-validationstates_default.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
+            </div>
+
+            <div class="kss-modifier__example  ">
+                <div class="m-ip-textbox ">
+    <label class="m-ip-textbox__label" for="error">Full name</label>
+    <p class="m-ip-textbox__error">How to correct this input.</p>
+    <input class="m-ip-textbox__input" type="text" id="error" name="full_name" value="Magesh Ravi">
+</div>
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+              <div class="kss-modifier__header">
+                <div>
+                  <div class="kss-modifier__name kss-style">
+                    .is-loading
+                  </div>
+                  <div class="kss-modifier__description kss-style">
+                    Validation or background-activity in progress
+                  </div>
+                  <div class="kss-modifier__insertmarkuptext kss-style">
+                    &lt;insert-markup&gt;textbox.validationstates-0&lt;/insert-markup&gt;
+                  </div>
+                </div>
+                <a title="open in a new window" class="" href="index-textbox-validationstates_0.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
+              </div>
+              <div class="kss-modifier__example ">
+                  <div class="m-ip-textbox is-loading">
+    <label class="m-ip-textbox__label" for="error">Full name</label>
+    <p class="m-ip-textbox__error">How to correct this input.</p>
+    <input class="m-ip-textbox__input" type="text" id="error" name="full_name" value="Magesh Ravi">
+</div>
+                <div class="kss-modifier__example-footer"></div>
+              </div>
+              <div class="kss-modifier__header">
+                <div>
+                  <div class="kss-modifier__name kss-style">
+                    .has-error
+                  </div>
+                  <div class="kss-modifier__description kss-style">
+                    Input data is NOT valid
+                  </div>
+                  <div class="kss-modifier__insertmarkuptext kss-style">
+                    &lt;insert-markup&gt;textbox.validationstates-1&lt;/insert-markup&gt;
+                  </div>
+                </div>
+                <a title="open in a new window" class="" href="index-textbox-validationstates_1.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
+              </div>
+              <div class="kss-modifier__example ">
+                  <div class="m-ip-textbox has-error">
+    <label class="m-ip-textbox__label" for="error">Full name</label>
+    <p class="m-ip-textbox__error">How to correct this input.</p>
+    <input class="m-ip-textbox__input" type="text" id="error" name="full_name" value="Magesh Ravi">
+</div>
+                <div class="kss-modifier__example-footer"></div>
+              </div>
+          </div>
+
+            <details class="kss-markup kss-style">
+              <summary>
+                  Markup
+              </summary>
+              <pre><code class="lang-markup">&lt;div class&#x3D;&quot;m-ip-textbox [modifier class]&quot;&gt;
+    &lt;label class&#x3D;&quot;m-ip-textbox__label&quot; for&#x3D;&quot;error&quot;&gt;Full name&lt;/label&gt;
+    &lt;p class&#x3D;&quot;m-ip-textbox__error&quot;&gt;How to correct this input.&lt;/p&gt;
+    &lt;input class&#x3D;&quot;m-ip-textbox__input&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;error&quot; name&#x3D;&quot;full_name&quot; value&#x3D;&quot;Magesh Ravi&quot;&gt;
+&lt;/div&gt;</code></pre>
+            </details>
+
+            <div class="kss-source kss-style">
+              Source: <code>static/css/src/_m-ip-textbox.scss</code>, line 103
+            </div>
+
+      </section>
+  </article>
+  </main>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-singlesection.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/search.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script src="kss-assets/prismjs.js" data-manual></script>
+<script>
+  var kssSingleSection = new KssSingleSection();
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+</body>
+</html>
