@@ -1,3 +1,1 @@
-.kss-modifier__example .m-ip-select__overlay,.kss-modifier__example .m-alert__overlay,.kss-modifier__example .m-confirm__overlay{position:absolute}
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9rc3Nfb3ZlcnJpZGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0ksaUlBR0ksaUJBQUEiLCJmaWxlIjoia3NzX292ZXJyaWRlcy5jc3MifQ== */
+.kss-modifier__example .m-ip-select__overlay,.kss-modifier__example .m-alert__overlay,.kss-modifier__example .m-confirm__overlay{position:absolute}.kss-modifier__wrapper{background-color:var(--body-bg)}/*# sourceMappingURL=kss_overrides.css.map */
